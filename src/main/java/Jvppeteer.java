@@ -1,6 +1,5 @@
 import com.ruiyun.jvppeteer.core.Puppeteer;
 import com.ruiyun.jvppeteer.core.browser.Browser;
-import com.ruiyun.jvppeteer.core.browser.BrowserFetcher;
 import com.ruiyun.jvppeteer.core.page.Page;
 import com.ruiyun.jvppeteer.options.LaunchOptions;
 import com.ruiyun.jvppeteer.options.LaunchOptionsBuilder;
@@ -16,7 +15,6 @@ public class Jvppeteer {
 
     public static void main(String[] args) throws InterruptedException, IOException, ExecutionException {
 
-        BrowserFetcher.downloadIfNotExist(null);
         ArrayList<String> arrayList = new ArrayList<>();
 
         LaunchOptions options = new LaunchOptionsBuilder().withArgs(arrayList).withHeadless(true).build();
